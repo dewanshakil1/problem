@@ -18,6 +18,10 @@ let createls = ( key , value) =>{
     localStorage.setItem(key , JSON.stringify(data));
 
 }
+//update ls data
+const updateLsdata = ( key , array) => {
+    localStorage.setItem(key, JSON.stringify(array))
+}
 // read ls data
 const readlsData = (key) =>{
     if(localStorage.getItem(key)){
